@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Foshan Xiaoxuan Technology Co., Ltd. — Pioneering AI solutions infused with Eastern wisdom. Intelligent systems for the future.">
+  <title>Xiaoxuan Tech | AI Innovation · Eastern Elegance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+
+  <div class="ink-wash ink-wash--left" aria-hidden="true"></div>
+  <div class="ink-wash ink-wash--right" aria-hidden="true"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-icon">轩</span>
+        <span class="nav__logo-text">XIAOXUAN<span class="nav__logo-sub">TECH</span></span>
+      </a>
+      <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#solutions">Solutions</a></li>
+        <li><a href="#technology">Technology</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="hero">
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__mountain" aria-hidden="true">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0,200 L200,80 L400,160 L600,40 L800,140 L1000,60 L1200,180 L1440,100 L1440,320 L0,320 Z" fill="url(#mountainGrad)" opacity="0.15"/>
+          <path d="M0,240 L300,120 L500,200 L700,100 L900,220 L1100,140 L1440,200 L1440,320 L0,320 Z" fill="url(#mountainGrad2)" opacity="0.1"/>
+          <defs>
+            <linearGradient id="mountainGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#00e5ff"/>
+              <stop offset="100%" stop-color="#0a0e1a"/>
+            </linearGradient>
+            <linearGradient id="mountainGrad2" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#c41e3a"/>
+              <stop offset="100%" stop-color="#0a0e1a"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__badge reveal">
+          <span class="hero__badge-dot"></span>
+          AI · Intelligence · Harmony
+        </div>
+        <h1 class="hero__title reveal">
+          <span class="hero__title-line">Where Artificial</span>
+          <span class="hero__title-line hero__title-line--accent">Intelligence Meets</span>
+          <span class="hero__title-line hero__title-line--chinese">东方智慧 <em>Eastern Wisdom</em></span>
+        </h1>
+        <p class="hero__desc reveal">
+          Foshan Xiaoxuan Technology crafts next-generation AI systems — blending cutting-edge neural architectures with the timeless elegance of Chinese innovation philosophy.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#solutions" class="btn btn--primary">
+            <span>Explore Solutions</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#contact" class="btn btn--outline">Get in Touch</a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="99">0</span><span class="hero__stat-suffix">.9%</span>
+            <span class="hero__stat-label">Model Accuracy</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="50">0</span><span class="hero__stat-suffix">+</span>
+            <span class="hero__stat-label">AI Projects</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <span class="hero__stat-num" data-count="24">0</span><span class="hero__stat-suffix">/7</span>
+            <span class="hero__stat-label">Neural Uptime</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll" aria-hidden="true">
+        <div class="hero__scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">About Us</span>
+          <h2 class="section__title">Bridging Silicon &amp; Silk Road</h2>
+          <p class="section__subtitle">Rooted in Foshan, reaching for the intelligent future</p>
+        </div>
+
+        <div class="about__grid">
+          <div class="about__visual reveal">
+            <div class="about__frame">
+              <div class="about__hex-grid" aria-hidden="true"></div>
+              <div class="about__core">
+                <div class="about__core-ring about__core-ring--1"></div>
+                <div class="about__core-ring about__core-ring--2"></div>
+                <div class="about__core-ring about__core-ring--3"></div>
+                <span class="about__core-char">智</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__text reveal">
+            <p>
+              <strong>Foshan Xiaoxuan Technology Co., Ltd.</strong> is a forward-thinking AI company headquartered in the heart of Guangdong's manufacturing hub. We specialize in intelligent automation, machine learning platforms, and data-driven decision systems.
+            </p>
+            <p>
+              Our philosophy draws from the Chinese concept of <em>天人合一</em> (harmony between humanity and nature) — designing AI that augments human capability rather than replacing it. Every algorithm we build carries both precision engineering and cultural depth.
+            </p>
+            <ul class="about__features">
+              <li>
+                <div class="about__feature-icon">◈</div>
+                <div>
+                  <strong>Deep Learning</strong>
+                  <span>Neural networks trained for real-world impact</span>
+                </div>
+              </li>
+              <li>
+                <div class="about__feature-icon">◈</div>
+                <div>
+                  <strong>Smart Automation</strong>
+                  <span>Intelligent workflows for modern enterprises</span>
+                </div>
+              </li>
+              <li>
+                <div class="about__feature-icon">◈</div>
+                <div>
+                  <strong>Data Intelligence</strong>
+                  <span>Transform raw data into actionable insight</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="section solutions" id="solutions">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Solutions</span>
+          <h2 class="section__title">AI-Powered Capabilities</h2>
+          <p class="section__subtitle">End-to-end intelligent systems tailored for industry</p>
+        </div>
+
+        <div class="solutions__grid">
+          <article class="solution-card reveal">
+            <div class="solution-card__glow"></div>
+            <div class="solution-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="1.5" opacity="0.3"/><path d="M24 8v32M8 24h32M14 14l20 20M34 14L14 34" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <span class="solution-card__chinese">神经网络</span>
+            <h3>Neural Computing</h3>
+            <p>Custom deep learning models for computer vision, NLP, and predictive analytics — optimized for speed and accuracy at scale.</p>
+          </article>
+
+          <article class="solution-card reveal">
+            <div class="solution-card__glow"></div>
+            <div class="solution-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="1.5" opacity="0.3"/><path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="1.5"/><circle cx="24" cy="24" r="6" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <span class="solution-card__chinese">智能自动化</span>
+            <h3>Intelligent Automation</h3>
+            <p>Robotic process automation enhanced by AI — streamlining operations with self-learning adaptive workflows.</p>
+          </article>
+
+          <article class="solution-card reveal">
+            <div class="solution-card__glow"></div>
+            <div class="solution-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><path d="M24 4L44 16v16L24 44 4 32V16L24 4z" stroke="currentColor" stroke-width="1.5" opacity="0.3"/><path d="M24 14v20M14 24h20" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <span class="solution-card__chinese">数据洞察</span>
+            <h3>Data Intelligence</h3>
+            <p>Real-time analytics dashboards and anomaly detection systems that turn complex datasets into clear strategic direction.</p>
+          </article>
+
+          <article class="solution-card reveal">
+            <div class="solution-card__glow"></div>
+            <div class="solution-card__icon">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="20" r="10" stroke="currentColor" stroke-width="1.5" opacity="0.3"/><path d="M12 40c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <span class="solution-card__chinese">认知计算</span>
+            <h3>Cognitive AI</h3>
+            <p>Conversational AI agents and knowledge graphs that understand context, intent, and nuance across languages.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technology -->
+    <section class="section technology" id="technology">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Technology Stack</span>
+          <h2 class="section__title">Built on Tomorrow's Foundation</h2>
+          <p class="section__subtitle">A fusion of global AI frameworks and proprietary innovation</p>
+        </div>
+
+        <div class="tech__pipeline reveal">
+          <div class="tech__node">
+            <div class="tech__node-icon">01</div>
+            <h4>Data Ingestion</h4>
+            <p>Multi-source pipelines with real-time streaming</p>
+          </div>
+          <div class="tech__connector"><div class="tech__connector-line"></div></div>
+          <div class="tech__node">
+            <div class="tech__node-icon">02</div>
+            <h4>Model Training</h4>
+            <p>Distributed GPU clusters &amp; transfer learning</p>
+          </div>
+          <div class="tech__connector"><div class="tech__connector-line"></div></div>
+          <div class="tech__node">
+            <div class="tech__node-icon">03</div>
+            <h4>Inference Engine</h4>
+            <p>Edge &amp; cloud deployment with sub-ms latency</p>
+          </div>
+          <div class="tech__connector"><div class="tech__connector-line"></div></div>
+          <div class="tech__node">
+            <div class="tech__node-icon">04</div>
+            <h4>Continuous Learning</h4>
+            <p>Self-improving models via feedback loops</p>
+          </div>
+        </div>
+
+        <div class="tech__tags reveal">
+          <span>PyTorch</span>
+          <span>TensorFlow</span>
+          <span>Transformers</span>
+          <span>Kubernetes</span>
+          <span>CUDA</span>
+          <span>LLM</span>
+          <span>Computer Vision</span>
+          <span>MLOps</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__tag">Contact</span>
+          <h2 class="section__title">Let's Build the Future</h2>
+          <p class="section__subtitle">Reach out to discuss your AI transformation journey</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <div class="contact__card">
+              <div class="contact__card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+              </div>
+              <div>
+                <span class="contact__label">Email</span>
+                <a href="mailto:UketaFaize@gmail.com" class="contact__value">UketaFaize@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/><circle cx="12" cy="11" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact__label">Address</span>
+                <span class="contact__value">Room 1, 1st Floor, Workshop F2, No. 41 Huijin Road, Baini Town, Sanshui District, Foshan City, Guangdong, China</span>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0H5m14 0h2m-16 0H3m2 0v-4m10 4v-4m-10 0V9m10 5V9"/></svg>
+              </div>
+              <div>
+                <span class="contact__label">Company</span>
+                <span class="contact__value">Foshan Xiaoxuan Technology Co., Ltd.</span>
+              </div>
+            </div>
+            <div class="contact__card">
+              <div class="contact__card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h6"/></svg>
+              </div>
+              <div>
+                <span class="contact__label">Registration No.</span>
+                <span class="contact__value contact__value--mono">91440607MA5797H68Y</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm">
+            <div class="form__group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+            <div class="form__group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com">
+            </div>
+            <div class="form__group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">
+              <span>Send Message</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form__note" id="formNote"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__logo">轩 XIAOXUAN</span>
+        <p>Intelligence refined by tradition. Technology shaped for tomorrow.</p>
+      </div>
+      <div class="footer__links">
+        <a href="#about">About</a>
+        <a href="#solutions">Solutions</a>
+        <a href="#technology">Technology</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer__legal">
+        <p>&copy; 2026 Foshan Xiaoxuan Technology Co., Ltd. All rights reserved.</p>
+        <p>USCC: 91440607MA5797H68Y</p>
+      </div>
+    </div>
+    <div class="footer__pattern" aria-hidden="true"></div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
